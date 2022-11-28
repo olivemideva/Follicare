@@ -1,14 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".BookFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/logo_light" />
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="180dp"
+                android:layout_height="108dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:src="@drawable/clearprofile" />
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aguafina_script"
+                android:layout_below="@id/profile_image"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:text="Jeska Mwema"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/prof_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/full_name"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:includeFontPadding="false"
+                android:text="jes@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/prof_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prof_email"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:includeFontPadding="false"
+                android:text="0796761294"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="10dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#edc6d9">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:padding="10dp"
+                            android:text="Choose services needed"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="170dp"
+                            android:layout_height="26dp"
+                            android:layout_below="@id/title"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="5dp"
+                            android:drawableRight="@drawable/ic_baseline_check_box_24"
+                            android:includeFontPadding="false"
+                            android:padding="5dp"
+                            android:text="Braiding"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="170dp"
+                            android:layout_height="26dp"
+                            android:layout_below="@id/text1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/ic_baseline_check_box_24"
+                            android:includeFontPadding="false"
+                            android:padding="5dp"
+                            android:text="Blowdrying"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="170dp"
+                            android:layout_height="26dp"
+                            android:layout_below="@id/text2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:drawableRight="@drawable/ic_baseline_check_box_outline_blank_24"
+                            android:includeFontPadding="false"
+                            android:padding="5dp"
+                            android:text="Crotcheting"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text4"
+                            android:layout_width="170dp"
+                            android:layout_height="26dp"
+                            android:layout_below="@id/text3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="0dp"
+                            android:drawableRight="@drawable/ic_baseline_check_box_24"
+                            android:includeFontPadding="false"
+                            android:padding="5dp"
+                            android:text="Washing hair "
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/text5"
+                            android:layout_width="170dp"
+                            android:layout_height="26dp"
+                            android:layout_below="@id/text4"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:drawableRight="@drawable/ic_baseline_check_box_outline_blank_24"
+                            android:includeFontPadding="false"
+                            android:padding="5dp"
+                            android:text="Wig installment"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="140dp"
+            android:paddingRight="140dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DONE"
+                android:backgroundTint="#C53E7E">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

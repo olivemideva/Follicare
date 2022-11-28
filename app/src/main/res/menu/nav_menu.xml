@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:background="@color/pink"
+    android:layout_width="40dp"
+    android:layout_height="40dp">
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/nav_Services"
+        android:icon="@drawable/ic_baseline_bookmark_border_24"
+        android:title="My services"/>
+
+    <item
+        android:id="@+id/nav_bookings"
+        android:icon="@drawable/ic_baseline_bookmark_border_24"
+        android:title="Bookings"/>
+    <item
+        android:id="@+id/nav_jobsdone"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Jobs done"/>
+    <item
+        android:id="@+id/nav_Notifications"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="Notifications"/>
+    <item
+        android:id="@+id/nav_Settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/nav_Deleteaccount"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="Delete account"/>
+    <item
+        android:id="@+id/nav_Logout"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
+        android:title="Logout"/>
+    <item
+        android:id="@+id/nav_Mybookings"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="My bookings"/>
+    <item
+        android:id="@+id/nav_Bookappointment"
+        android:icon="@drawable/ic_baseline_bookmark_border_24"
+        android:title="Book appointment"/>
+
+</menu>

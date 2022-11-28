@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/logo_light" />
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/clearprofile"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jeska Mwema"
+                android:fontFamily="@font/aguafina_script"
+                android:textSize="20sp"
+                android:layout_below="@id/profile_image"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/prof_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jes@gmail.com"
+                android:textSize="14sp"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_below="@id/full_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/prof_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0796761294"
+                android:textSize="14sp"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_below="@id/prof_email"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#edc6d9">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Services Offered"
+                                android:textSize="15sp"
+                                android:padding="5dp"
+                                android:includeFontPadding="false"/>
+
+                            <TextView
+                                android:id="@+id/title1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Prices"
+                                android:textSize="15sp"
+                                android:padding="5dp"
+                                android:includeFontPadding="false"/>
+
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_below="@id/title"
+                                android:text="1.Unplaiting hair "
+                                android:padding="5dp"
+                                android:textSize="14sp"/>
+                            <TextView
+                                android:id="@+id/text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_below="@id/title"
+                                android:text="Ksh 50"
+                                android:padding="5dp"
+                                android:textSize="14sp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_below="@id/title"
+                                android:text="2.Washing Hair"
+                                android:padding="5dp"
+                                android:textSize="14sp"/>
+                            <TextView
+                                android:id="@+id/text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_below="@id/title"
+                                android:text="Ksh 60"
+                                android:padding="5dp"
+                                android:textSize="14sp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/text5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_below="@id/title"
+                                android:text="3. Blow Drying Hair "
+                                android:padding="5dp"
+                                android:textSize="14sp"/>
+                            <TextView
+                                android:id="@+id/text6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_below="@id/title"
+                                android:text="Ksh 70"
+                                android:padding="5dp"
+                                android:textSize="14sp"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/text7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_below="@id/title"
+                                android:text="4.Plaiting long kinky braids "
+                                android:padding="5dp"
+                                android:textSize="14sp"/>
+                            <TextView
+                                android:id="@+id/text8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_below="@id/title"
+                                android:text="Ksh 700"
+                                android:padding="5dp"
+                                android:textSize="14sp"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book"
+                android:backgroundTint="#C53E7E"
+                android:onClick="">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
